@@ -25,11 +25,10 @@ fastclick
 raix:handlebar-helpers
 aldeed:collection2
 aldeed:autoform
-rameduard:autoform-materialize-templates
 accounts-ui
 accounts-password
 matb33:bootstrap-glyphicons
-msavin:jetsetter
+meteortoys:allthings
 zimme:active-route
 gwendall:auth-client-callbacks
 fourseven:scss
