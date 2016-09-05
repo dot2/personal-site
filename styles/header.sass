@@ -17,6 +17,11 @@ header
         flex-direction: row
         align-items: center
 
+        a
+            text-decoration: none
+            color: inherit
+            padding-bottom: 1em
+
         .nav-item
             margin: 0 1.5em
 
@@ -28,11 +33,16 @@ header
         img
             width: 80px
 
+    
+
     .slide
       background-color: $accent
-      width: cal(100% / #{$num-of-tabs})
+      width: calc(100% / #{$num-of-tabs})
       height: 4px
       position: absolute
       left: 0
-      top: calc(100% - 4px)
+      font: 0/0 a
+      color: transparent
+      text-shadow: none
+      bottom: -9px
       transition: left 0.3s ease-out
