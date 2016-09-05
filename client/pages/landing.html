@@ -19,28 +19,29 @@
                     <div class="social-item"><img src="../images/github-icon.svg" /></div>
                 </div>
             </div>
+            <div class="card email-card">
+              <div class="card-header">
+                <h2>Message Me</h2>
+              </div>
+              <div class="form">
+                {{>contactForm}}
+              </div>
+            </div>
         </div>
 
         <div class="col col-center">
-            <div class="card card-medium">
-              <div class="project-name">{{title}}</div>
-              <div class="project-image" style="background-image: url('{{imageUrl}}')">project-image</div>
-              <div class="project-info">{{description}}</div>
-              <div class="project-footer">
-                <div class="heart">
-                  <img src="../images/heart-icon.svg" alt="like"/>
-                  23
-                </div>
-              </div>
-            </div>
-            {{#each projects}}
+          {{>project1}}
+          {{>project2}}
+            <!-- {{#each project}}
             {{>projectCard}}
-            {{/each}}
+            {{/each}} -->
          </div>
 
         <div class="col col-right">
             <div class="card card-large">
-                Dylan
+              <div class="card-header">
+                <h2>Chat with a bot</h2>
+              </div>
             </div>
         </div>
     </div>
