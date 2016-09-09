@@ -1,3 +1,3 @@
-Meteor.publish('project', function() {
-    return Projects.find({ }, {sort: {createdAt: -1}});
+Meteor.publish('posts', function() {
+    return Posts.findOne();
 });

@@ -23,6 +23,9 @@ header
 
         .nav-item
             margin: 0 1.5em
+            transition: all 0.3s ease
+            &:hover
+                color: #fff
 
 
     .logo
@@ -31,17 +34,3 @@ header
         align-items: center
         img
             width: 80px
-
-
-
-    .slide
-      background-color: $accent
-      width: calc(100% / #{$num-of-tabs})
-      height: 4px
-      position: absolute
-      left: 0
-      font: 0/0 a
-      color: transparent
-      text-shadow: none
-      bottom: -9px
-      transition: left 0.3s ease-out
