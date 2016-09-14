@@ -1,2 +1,4 @@
 //Subscriptions
-PostsSub = Meteor.subscribe('posts');
+// Template.Landing.posts = function() {
+//   return Posts.find({});
+// };

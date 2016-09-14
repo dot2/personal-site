@@ -16,9 +16,18 @@ Template.Header.rendered = function() {
         //off > revert the color
 };
 
-Template.registerHelper('posts', function() {
-    return Posts.find({}, { sort: ['sort'] });
+// Template.registerHelper('posts', function() {
+//     return Posts.find({}, { sort: ['sort'] });
+// });
+
+
+Template.Landing.onCreated(function () {
+    var self= this;
+    self.autorun(function() {
+        self.subscribe('posts');
+    });
 });
+
 
 Template.Landing.helpers({
   posts: function () {

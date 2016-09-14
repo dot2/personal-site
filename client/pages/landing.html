@@ -41,19 +41,7 @@
         </div>
 
         <div class="col col-center">
-             {{#each posts}}
-                 <div class="card card-medium">
-                   <div class="project-name">{{title}}</div>
-                   <div class="project-image" style="background-image: url('../images/header-bkg.jpg')">project-image</div>
-                   <div class="project-info">This is the Design Co.</div>
-                   <div class="project-footer">
-                   <div class="heart"><img src="../images/heart-icon.svg" alt="like"/><span>23</span></div>
-                   <!-- <div class="view"><img src="../images/view.svg" alt="like"/><span>23</span></div>
-                   <div class="comment"><img src="../images/comment.svg" alt="like"/><span>23</span></div> -->
-                   <div class="codepen"><img src="../images/codepen.svg" alt="codepen"/></div>
-                   </div>
-                 </div>
-             {{/each}}
+             {{> project1}}
          </div>
 
         <div class="col col-right">

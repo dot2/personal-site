@@ -1,3 +1,4 @@
+
 Meteor.publish('posts', function() {
-    return Posts.findOne();
+    return Posts.find({ }, {sort: {createdAt: -1}});
 });
